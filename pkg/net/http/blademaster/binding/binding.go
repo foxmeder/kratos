@@ -44,7 +44,7 @@ var Validator StructValidator = &defaultValidator{}
 
 // Binding
 var (
-	JSON          = jsonBinding{}
+	JSON          = jsonPbBinding{}
 	XML           = xmlBinding{}
 	Form          = formBinding{}
 	Query         = queryBinding{}
