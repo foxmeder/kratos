@@ -7,7 +7,7 @@ import (
 
 	"github.com/bilibili/kratos/tool/protobuf/pkg/gen"
 	"github.com/bilibili/kratos/tool/protobuf/pkg/generator"
-	bmgen "github.com/bilibili/kratos/tool/protobuf/protoc-gen-bm/generator"
+	bmgen "github.com/foxmeder/kratos/tool/protobuf/protoc-gen-bm/generator"
 )
 
 func main() {
