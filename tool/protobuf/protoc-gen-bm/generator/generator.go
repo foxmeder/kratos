@@ -117,7 +117,7 @@ func (t *bm) generateImports(file *descriptor.FileDescriptorProto) {
 	t.P()
 	t.P(`	bm "github.com/bilibili/kratos/pkg/net/http/blademaster"`)
 	t.P(`	"github.com/bilibili/kratos/pkg/net/http/blademaster/binding"`)
-	t.P(`	"smartvoice-ng/util"`)
+	t.P(`	krj "github.com/foxmeder/kratos-rawjson"`)
 
 	t.P(`)`)
 	// It's legal to import a message and use it as an input or output for a
@@ -217,7 +217,7 @@ func (t *bm) generateBMRoute(
 		t.P(`	}`)
 		t.P(`	resp, err := `, svcName, `.`, methName, `(c, p)`)
 		//t.P(`	c.JSON(resp, err)`)
-		t.P(`	util.HandleSVJSON(c, resp, err)`)
+		t.P(`	krj.HandleSVJSON(c, resp, err)`)
 		t.P(`}`)
 		t.P(``)
 	}
